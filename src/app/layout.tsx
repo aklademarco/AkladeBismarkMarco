@@ -1,6 +1,14 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
+export const viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#0f172a" }
+  ]
+};
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -58,10 +66,6 @@ export const metadata: Metadata = {
     apple: "/favicon.ico",
     other: [{ rel: "apple-touch-icon", url: "/favicon.ico" }],
   },
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0f172a" },
-  ],
   robots: {
     index: true,
     follow: true,

@@ -1,24 +1,28 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const PROJECTS = [
   {
-    title: "Creative Landing Page",
-    desc: "Elegant, responsive landing with scroll animations.",
-    tech: ["Next.js", "Tailwind", "Framer Motion"],
-    href: "#"
+    title: "Sync Finance",
+    desc: "A modern, comprehensive personal finance management application built with React and Tailwind CSS. Track your expenses, manage budgets, generate reports, and take control of your financial life with an intuitive dark/light mode interface.",
+    tech: ["React", "Tailwind CSS", "TypeScript"],
+    href: "https://sync-finance-seven.vercel.app/",
+    img: "/syncFinance.jpg"
   },
   {
-    title: "E‑commerce UI",
-    desc: "Product grid, filters, cart, and checkout flow.",
-    tech: ["Next.js", "Stripe", "Zustand"],
-    href: "#"
+    title: "SyncWell Devs",
+    desc: "A modern web agency site for SyncWell Devs, built with JS, CSS, HTML, and TypeScript. Showcases services, team, and projects with a clean responsive design.",
+    tech: ["JavaScript", "CSS", "HTML", "TypeScript"],
+    href: "https://aklademarco.github.io/SyncWell-Devs/",
+    img: "/syncwelldevs.jpg"
   },
   {
-    title: "Analytics Dashboard",
-    desc: "Realtime charts, auth, and role‑based access.",
-    tech: ["Next.js", "Supabase", "Recharts"],
-    href: "#"
+    title: "Ehyen Foods",
+    desc: "Natural, additive-free Ghanaian spices. Built with Next.js, Tailwind, and EmailJS for form submission.",
+    tech: ["Next.js", "Tailwind", "EmailJS"],
+    href: "https://ehyen-foods.vercel.app/",
+    img: "/ehyenfoods.jpg"
   }
 ];
 
@@ -41,7 +45,20 @@ export default function Projects() {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
             >
-              <div className="aspect-video rounded-xl bg-gray-100 dark:bg-gray-800 mb-4 group-hover:scale-[1.01] transition" />
+              {p.img ? (
+                <div className="relative aspect-video rounded-xl overflow-hidden mb-4 group-hover:scale-[1.01] transition">
+                  <Image
+                    src={p.img}
+                    alt={p.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover rounded-xl"
+                    priority={i === 0}
+                  />
+                </div>
+              ) : (
+                <div className="aspect-video rounded-xl bg-gray-100 dark:bg-gray-800 mb-4 group-hover:scale-[1.01] transition" />
+              )}
               <h3 className="text-lg font-semibold">{p.title}</h3>
               <p className="text-sm text-gray-400 mt-1">{p.desc}</p>
               <div className="flex flex-wrap gap-2 mt-3">
