@@ -28,10 +28,10 @@ export default function Header() {
 
         <nav>
           <ul className="hidden md:flex gap-6 text-sm">
-            <li><a className="text-gray-400 hover:text-white" href="#home">#home</a></li>
-            <li><a className="text-gray-400 hover:text-white" href="#projects">#projects</a></li>
-            <li><a className="text-gray-400 hover:text-white" href="#about">#about-me</a></li>
-            <li><a className="text-gray-400 hover:text-white" href="#contact">Contact</a></li>
+            <li><a className="text-gray-400 hover:text-white" href="#home"><span className="text-purple-400">#</span>home</a></li>
+            <li><a className="text-gray-400 hover:text-white" href="#projects"><span className="text-purple-400">#</span>projects</a></li>
+            <li><a className="text-gray-400 hover:text-white" href="#about"><span className="text-purple-400">#</span>about-me</a></li>
+            <li><a className="text-gray-400 hover:text-white" href="#contact"><span className="text-purple-400">#</span>contact</a></li>
           </ul>
 
           <button
