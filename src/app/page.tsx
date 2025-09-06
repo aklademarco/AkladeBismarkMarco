@@ -70,7 +70,7 @@ export default function Home() {
       <section id="about" className="mt-24 bg-transparent">
         <div className="md:flex md:gap-12 items-start">
           <div className="md:flex-1">
-            <h2 className="text-2xl font-mono text-purple-300 mb-4">About me</h2>
+            <h2 className="text-2xl font-mono text-purple-400 mb-4">About me</h2>
             <p className="text-gray-300 mb-3">I am Aklade Bismark Marco, a Level 300 Computer Engineering student at Ghana Communication Technology University (GCTU) with a strong passion for technology, problem-solving, and innovation.</p>
 
             <p className="text-gray-300 mb-3">As a web developer, I specialize in building clean, responsive, and user-friendly interfaces. I enjoy transforming ideas into digital solutions that are not only functional but also visually appealing.</p>

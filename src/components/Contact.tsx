@@ -44,7 +44,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="mt-12">
-      <h2 className="text-2xl font-mono text-purple-300 mb-4">Contact</h2>
+      <h2 className="text-2xl font-mono text-purple-400 mb-4">Contact</h2>
 
       <form onSubmit={handleSubmit} className="grid gap-4 max-w-xl">
         <div>
