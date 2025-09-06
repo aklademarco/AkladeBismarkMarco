@@ -32,7 +32,7 @@ export default function Projects() {
       <div className="container mx-auto">
         <div className="mb-10">
           <h2 className="text-3xl md:text-4xl font-bold">Featured Projects</h2>
-          <p className="text-gray-600 dark:text-gray-300">A selection of work that mirrors the structure of eliasdevis.github.io.</p>
+          <p className="text-gray-600 dark:text-gray-300">A selection of projects I have worked on.</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {PROJECTS.map((p, i) => (
