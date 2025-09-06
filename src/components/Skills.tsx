@@ -2,8 +2,8 @@
 import { motion } from "framer-motion";
 
 const STACK = [
-  "JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Express", "Tailwind", "Sass",
-  "Git", "Docker", "PostgreSQL", "MongoDB"
+  "JavaScript", "TypeScript", "React", "Next.js", "Express", "Tailwind", "HTML",
+  "Git", "Figma"
 ];
 
 export default function Skills() {

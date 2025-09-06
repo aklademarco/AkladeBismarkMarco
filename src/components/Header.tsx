@@ -53,10 +53,10 @@ export default function Header() {
       {/* mobile menu */}
       {open && (
         <div className="md:hidden absolute right-0 mt-2 w-48 bg-gray-900/90 rounded p-3 shadow-lg z-40">
-          <a href="#home" className="block px-2 py-2 text-gray-200 hover:bg-gray-800 rounded" onClick={() => setOpen(false)}>#home</a>
-          <a href="#projects" className="block px-2 py-2 text-gray-200 hover:bg-gray-800 rounded" onClick={() => setOpen(false)}>#projects</a>
-          <a href="#about" className="block px-2 py-2 text-gray-200 hover:bg-gray-800 rounded" onClick={() => setOpen(false)}>#about-me</a>
-          <a href="#contact" className="block px-2 py-2 text-gray-200 hover:bg-gray-800 rounded" onClick={() => setOpen(false)}>Contact</a>
+          <a href="#home" className="block px-2 py-2 text-gray-200 hover:bg-gray-800 rounded" onClick={() => setOpen(false)}> <span className="text-purple-400">#</span>home</a>
+          <a href="#projects" className="block px-2 py-2 text-gray-200 hover:bg-gray-800 rounded" onClick={() => setOpen(false)}> <span className="text-purple-400">#</span>projects</a>
+          <a href="#about" className="block px-2 py-2 text-gray-200 hover:bg-gray-800 rounded" onClick={() => setOpen(false)}> <span className="text-purple-400">#</span>about-me</a>
+          <a href="#contact" className="block px-2 py-2 text-gray-200 hover:bg-gray-800 rounded" onClick={() => setOpen(false)}> <span className="text-purple-400">#</span>contact</a>
         </div>
       )}
     </div>
