@@ -28,12 +28,8 @@ export default function Contact() {
 
     const subject = encodeURIComponent(`Contact from ${name}`);
     const body = encodeURIComponent(`${message}\n\n— ${name} <${email}>`);
-    const mailto = `mailto:hello@example.com?subject=${subject}&body=${body}`;
-
-    // open user's mail client
+    const mailto = `mailto:aklademarco2@gmail.com?subject=${subject}&body=${body}`;
     window.location.href = mailto;
-
-    // reset after short delay (user leaves page); keep minimal UX
     setTimeout(() => {
       setSubmitting(false);
       setName("");

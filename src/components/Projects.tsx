@@ -8,22 +8,29 @@ const PROJECTS = [
     desc: "A modern, comprehensive personal finance management application built with React and Tailwind CSS. Track your expenses, manage budgets, generate reports, and take control of your financial life with an intuitive dark/light mode interface.",
     tech: ["React", "Tailwind CSS", "TypeScript"],
     href: "https://sync-finance-seven.vercel.app/",
-    img: "/syncFinance.jpg"
+    img: "/syncFinance.jpg",
   },
   {
     title: "SyncWell Devs",
     desc: "A modern web agency site for SyncWell Devs, built with JS, CSS, HTML, and TypeScript. Showcases services, team, and projects with a clean responsive design.",
     tech: ["JavaScript", "CSS", "HTML", "TypeScript"],
     href: "https://aklademarco.github.io/SyncWell-Devs/",
-    img: "/syncwelldevs.jpg"
+    img: "/syncwelldevs.jpg",
   },
   {
     title: "Ehyen Foods",
     desc: "Natural, additive-free Ghanaian spices. Built with Next.js, Tailwind, and EmailJS for form submission.",
     tech: ["Next.js", "Tailwind", "EmailJS"],
-    href: "https://ehyen-foods.vercel.app/",
-    img: "/ehyenfoods.jpg"
-  }
+    href: "https://www.ehyenfoods.com/",
+    img: "/ehyenfoods.jpg",
+  },
+  {
+    title: "LukSharp Laundry",
+    desc: "Smart Laundry solutions for the modern customer",
+    tech: ["React.js", "Tailwind", "HTML"],
+    href: "https://www.luksharplaundry.com/",
+    img: "/luksharp.png",
+  },
 ];
 
 export default function Projects() {

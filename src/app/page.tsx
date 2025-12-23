@@ -41,9 +41,9 @@ export default function Home() {
           </h1>
 
           <p className="text-gray-400">
-            He crafts responsive websites where technologies
+            He builds clean, responsive and 
             <br />
-            meet creativity
+            user-focused websites.
           </p>
 
           <a
