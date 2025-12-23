@@ -1,4 +1,3 @@
-
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -7,8 +6,8 @@ import "./globals.css";
 export const viewport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0f172a" }
-  ]
+    { media: "(prefers-color-scheme: dark)", color: "#0f172a" },
+  ],
 };
 
 const geistSans = Geist({
@@ -63,10 +62,23 @@ export const metadata: Metadata = {
     images: ["/marco1.jpg"],
   },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/favicon.ico",
-    other: [{ rel: "apple-touch-icon", url: "/favicon.ico" }],
+    icon: [
+      {
+        rel: "icon",
+        url: "/favicon-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        rel: "icon",
+        url: "/favicon-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+    ],
+    apple: "/apple-touch-icon.png",
   },
+  manifest: "/site.webmanifest",
   robots: {
     index: true,
     follow: true,
@@ -93,8 +105,8 @@ export default function RootLayout({
     url: "https://example.com",
     image: "https://example.com/marco1.jpg",
     sameAs: [
-      "https://github.com/",
-      "https://www.linkedin.com/",
+      "https://github.com/aklademarco",
+      "https://www.linkedin.com/in/aklade-bismark-7426812a1",
     ],
     jobTitle: "Web Designer & Front-end Developer",
     description:
